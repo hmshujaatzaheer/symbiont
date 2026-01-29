@@ -1,0 +1,90 @@
+# Copyright (c) 2026 H M Shujaat Zaheer. All Rights Reserved.
+# PROPRIETARY AND CONFIDENTIAL - See LICENSE file for terms.
+"""
+Core module for SYMBIONT framework.
+
+Contains fundamental constants, type definitions, and base classes.
+"""
+
+from symbiont.core.constants import (  # noqa: F401
+    ANOMALY_SCORE_THRESHOLD,
+    COLLISION_PENALTY,
+    CONCRETE_LONGITUDINAL_VELOCITY,
+    CONCRETE_TRANSVERSE_VELOCITY,
+    CONSISTENCY_THRESHOLD,
+    DEFAULT_DELTA,
+    DEFAULT_EPSILON,
+    DEFAULT_EVENT_THRESHOLD,
+    DEFAULT_FFT_SIZE,
+    DEFAULT_LEARNING_RATE,
+    DEFAULT_NOISE_STD,
+    DEFAULT_SAMPLE_RATE,
+    EMBEDDING_DIMENSION,
+    EMBEDDING_SENSITIVITY,
+    ENERGY_SENSE_ECTI,
+    ENERGY_SLEEP_POWER,
+    ENERGY_TRANSMIT,
+    GP_LENGTH_SCALE,
+    GP_VARIANCE,
+    MAX_STALENESS,
+    MC_DROPOUT_SAMPLES,
+    PIEZO_D31,
+    PINNA_CONV_FILTERS,
+    PINNA_DENSE_UNITS,
+    PINNA_DROPOUT_RATE,
+    PINNA_FREQUENCY_BINS,
+    STEEL_EFFECTIVE_VELOCITY,
+    STEEL_LONGITUDINAL_VELOCITY,
+    STEEL_TRANSVERSE_VELOCITY,
+    UNCERTAINTY_THRESHOLD,
+    VELOCITY_ANOMALY_THRESHOLD,
+    VELOCITY_TEMP_COEFFICIENT,
+    compute_effective_velocity,
+)
+from symbiont.core.theorems import (
+    async_convergence_bound,
+    cramer_rao_fisher_information,
+    damage_localization_check,
+    differential_privacy_noise_scale,
+    digital_twin_convergence_bound,
+    eccp_coverage_probability,
+    eccp_throughput_factor,
+    false_alarm_bound,
+    hierarchical_communication_cost,
+    mutual_information_through_structure,
+    nash_equilibrium_probability,
+    optimal_dispersion_fusion_variance,
+    smis_synchronization_bound,
+    tefl_convergence_bound,
+    tefl_optimal_time,
+)
+
+__all__ = [
+    # Constants
+    "STEEL_LONGITUDINAL_VELOCITY",
+    "STEEL_TRANSVERSE_VELOCITY",
+    "STEEL_EFFECTIVE_VELOCITY",
+    "CONCRETE_LONGITUDINAL_VELOCITY",
+    "CONCRETE_TRANSVERSE_VELOCITY",
+    "compute_effective_velocity",
+    "DEFAULT_NOISE_STD",
+    "DEFAULT_SAMPLE_RATE",
+    "DEFAULT_FFT_SIZE",
+    "DEFAULT_EVENT_THRESHOLD",
+    # Theorems
+    "mutual_information_through_structure",
+    "smis_synchronization_bound",
+    "cramer_rao_fisher_information",
+    "optimal_dispersion_fusion_variance",
+    "false_alarm_bound",
+    "damage_localization_check",
+    "nash_equilibrium_probability",
+    "eccp_coverage_probability",
+    "eccp_throughput_factor",
+    "tefl_convergence_bound",
+    "differential_privacy_noise_scale",
+    "digital_twin_convergence_bound",
+    "hierarchical_communication_cost",
+    "async_convergence_bound",
+    "tefl_optimal_time",
+]
