@@ -351,7 +351,6 @@ If you use SYMBIONT in your research, please cite:
   title={SYMBIONT: SYMBiotic Infrastructure mONitoring with sTructure-mediated Intelligence},
   author={H M Shujaat Zaheer},
   year={2026},
-  school={[University Name]},
   note={PhD Proposal}
 }
 ```
